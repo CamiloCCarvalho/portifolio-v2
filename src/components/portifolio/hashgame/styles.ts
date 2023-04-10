@@ -104,14 +104,14 @@ export const WinButton = styled.button`
     border-radius: 3px;
     color:white;
     border:none;
-    background-image:linear-gradient(to bottom, rgba(111,214,8, 100%), rgb(146, 255, 3));
+    background:${props => props.theme.colors.highlight};
     font-family:'Anton';
     margin-top:20px;
     cursor: pointer;
 
     &:hover {
-        color:rgb(232, 226, 226);
-        background-image:linear-gradient(to top, rgba(111,214,8, 100%), rgb(146, 255, 3));
+        color:${props => props.theme.colors.highlight};
+        background: #f5f5f5;
     }
 `
 

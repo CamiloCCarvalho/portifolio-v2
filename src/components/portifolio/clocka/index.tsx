@@ -4,8 +4,8 @@ import {ClockPage, Clock, Hour, Min, Sec, Hpointer, Mpointer, Spointer} from './
 
 const ClockAnalogPage:React.FC = () => {
 
-    let day = new Date()
-    let now = [(day.getHours()*30), (day.getMinutes()*6), (day.getSeconds()*6)]
+    let day:Date = new Date()
+    let now:number[] = [(day.getHours()*30), (day.getMinutes()*6), (day.getSeconds()*6)]
     const [hourNow, setHour] = useState<Date>()
 
     useEffect(()=> {

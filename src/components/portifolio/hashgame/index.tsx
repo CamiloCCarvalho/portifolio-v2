@@ -52,7 +52,7 @@ const HashGamePage:React.FC = () => {
          cell.classList.add(classToAdd)
      }
 
-     const checkForWin = (currentPlayer: string) => {
+     const checkForWin = (currentPlayer: string):boolean => {
          return victoryCombination.some(combination => {
              return combination.every(index => {
                  return document.querySelectorAll("[data-cell]")[index].classList.contains(currentPlayer)
@@ -60,13 +60,13 @@ const HashGamePage:React.FC = () => {
          })
      }
 
-     const checkForDraw = () => {
+     const checkForDraw = ():boolean => {
          return [...document.querySelectorAll("[data-cell]")].every(cell => {
              return cell.classList.contains("x") || cell.classList.contains("circle")
          })
      }
 
-     const setBoardHoverClass = () => {
+     const setBoardHoverClass = ():void => {
          boardRef.current?.classList.remove("circle")
          boardRef.current?.classList.remove("x")
 
@@ -76,23 +76,23 @@ const HashGamePage:React.FC = () => {
      }
 
      //Swap Players
-     const swapTurns = () => {
+     const swapTurns = ():void => {
          isCircleTurn = !isCircleTurn
          setBoardHoverClass()
      }
 
      // Clicks
-     const handleClick = (e:any) => {
+     const handleClick = (e:any):void => {
          //Input mark
          const cell = e.target
-         const classToAdd = isCircleTurn ? 'circle' : 'x'
+         const classToAdd:string = isCircleTurn ? 'circle' : 'x'
          placeMark(cell, classToAdd)
 
          //Check victory
          const isWin = checkForWin(classToAdd)
 
          //Check a draw
-         const isDraw = checkForDraw()
+         const isDraw:boolean = checkForDraw()
          if(isWin) {
              endGame(false)
          } else if(isDraw) {

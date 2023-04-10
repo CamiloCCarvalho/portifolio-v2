@@ -3,8 +3,19 @@ import {ClockPage, ClockBox, ClockTitle, Clock, ClockNumber} from './styles'
 
 const ClockDigitalPage:React.FC = () => {
 
-    let day = new Date()
-    let now = [day.getHours(), day.getMinutes(), day.getSeconds()]
+    const verifyNumber = (numb:number):string => {
+        const numbFormat = numb < 10 ? `0${numb.toString()}`: numb.toString()
+        return numbFormat
+    }
+    let day:Date = new Date()
+    const hour:string = verifyNumber(day.getHours())
+    const minute:string= verifyNumber(day.getMinutes())
+    const second:string= verifyNumber(day.getSeconds())
+    
+    let now = [hour, minute, second]
+
+
+
     const [hourNow, setHour] = useState<Date>()
     useEffect(()=> {
         setInterval(()=> {
