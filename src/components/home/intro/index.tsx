@@ -77,7 +77,7 @@ const ContainerIntro:React.FC = () => {
             <BoxRight>
                 <HomeText className='animationTextBox'>
                     <Title>Olá! Eu sou Camilo</Title>
-                    <Title style={{color: "darkcyan", fontSize: "2rem"}}>Front-End Developer</Title>
+                    <Title style={{color: "darkcyan", fontSize: "2rem"}}>{"<FullStack JavaScript - Developer />"}</Title>
                     <HomeTextPersonal className="textP">Vamos Programar 
                         <TypedText className="typedText"></TypedText><CursorText className="cursor">&nbsp;</CursorText>
                     </HomeTextPersonal>
