@@ -22,7 +22,7 @@ const AboutPage = () => {
                             <Text className="card-text">Ensino Médio Técnico pela, ETEP - Professor Everardo Passos - (2009 - 2011)</Text>
                         </li>
                         <li>
-                            <Text className="card-text">Médio Tecnico ETEP - Mecanica Industrial - (2009 - 2011)</Text>
+                            <Text className="card-text">Tecnico ETEP - Mecanica Industrial - (2009 - 2011)</Text>
                         </li>
                         <li>
                             <Text className="card-text">Superior Concluido Gestão de Recursos Humanos, Anhanguera Educacional (2013 - 2015)</Text>
@@ -64,7 +64,7 @@ const AboutPage = () => {
                             <Text className="card-text">TIVIT - GERA: Curso Interno da Empresa com foto no desenvolvimento de softskils. Comunicação, Trabalho em Equipe, Apresentação de Projetos e Cases. (2014 - Certificado)</Text>
                         </li>
                         <li>
-                            <Text className="card-text">ONEBITCODE - FULLSTACK JAVASCRIPT: Especialização em Front-End e BackEnd usando as principais ferramentas do mercado. React, BootStrap, Node, Vue, Next, MongoDB, PostMan, PostGree entre outras. (2023 - Em curso)</Text>
+                            <Text className="card-text">ONEBITCODE - FULLSTACK JAVASCRIPT: Especialização em Front-End e BackEnd usando as principais ferramentas do mercado. React, BootStrap, Node, Next, MongoDB, PostGreeSQL entre outras. (2023 - Em curso)</Text>
                         </li>
                     </ul>
                 </TextBox>
