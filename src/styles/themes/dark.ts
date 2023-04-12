@@ -2,7 +2,7 @@ export default {
     title: 'dark',
 
     colors: {
-        primary: '#191919', //navbackground darnk
+        primary: '#191919', //navbackground dark
         secundary: '#0FA3B1', //blue
 
         background: '#202020;', //darksilver

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 //Container Mid
-export const Stacks = styled.div`
+export const Stacks = styled.section`
     height:auto;
     background-color: ${props => props.theme.colors.highlight};
     display:flex;

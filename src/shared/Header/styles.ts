@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
-export const ContainerNav = styled.div`
+export const ContainerNav = styled.header`
     height: 60px;
     width:auto;
     background: ${props => props.theme.colors.primary};

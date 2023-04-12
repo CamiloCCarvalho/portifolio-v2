@@ -23,7 +23,7 @@ export const Intro = styled.div`
     }
     
 `
-export const BoxLeft = styled.div`
+export const BoxLeft = styled.figure`
     display:flex;
     flex-flow:column nowrap;
     align-items:center;
@@ -35,7 +35,7 @@ export const BoxLeft = styled.div`
         padding: 80px 25px;
     }
 `
-export const BoxRight = styled.div`
+export const BoxRight = styled.section`
     display:flex;
     flex-flow:column wrap;
     width:auto;
@@ -52,7 +52,7 @@ export const HomeImage = styled.img`
     
 `
 
-export const Buttons = styled.div`
+export const Buttons = styled.figcaption`
     font-family: 'Monserrat', sans-serif;
     width:60%;
     display:flex;
@@ -92,7 +92,7 @@ export const MyButtonHighLight = styled.button`
 `
 
 //Content Intro - Right side
-export const HomeText = styled.div`
+export const HomeText = styled.article`
     height: 100vh;
     display: flex;
     flex-flow:column nowrap;
@@ -106,7 +106,7 @@ export const HomeText = styled.div`
         align-items: center;
     }
 `
-export const Title = styled.h1`
+export const Title = styled.h2`
     font-family: 'Monserrat', sans-serif;
     font-weight:900;
 `

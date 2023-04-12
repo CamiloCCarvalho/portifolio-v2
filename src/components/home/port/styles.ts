@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 //Container Mid
-export const Port = styled.div`
+export const Port = styled.section`
     height:auto;
     background-color: ${props => props.theme.colors.background};
     display:flex;

@@ -18,12 +18,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
 
-      <div className="App">
+      <main className="App">
           <GlobalStyle />
           <Header toggleTheme={toggleTheme}/>
           <Outlet />
           <Footer/>
-      </div>
+      </main>
 
     </ThemeProvider>
   )

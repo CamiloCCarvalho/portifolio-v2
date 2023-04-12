@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const ContainerAbout = styled.div`
+export const ContainerAbout = styled.section`
     height: auto;
     display:flex;
     flex-flow: row wrap;
