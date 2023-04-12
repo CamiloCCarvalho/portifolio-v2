@@ -66,7 +66,6 @@ export const MyButton = styled.button`
     width:fit-content;
     padding: 2px 10px;
     color: ${props => props.theme.colors.background};
-    display:none;
 
     &:hover {
         background: ${props => props.theme.colors.text};

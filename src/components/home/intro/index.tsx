@@ -71,9 +71,16 @@ const ContainerIntro:React.FC = () => {
             <BoxLeft>
                 <HomeImage src="https://raw.githubusercontent.com/CamiloCCarvalho/portifolio-v2/main/src/assets/camilocosta.png" alt="ImG"/>
                 <Buttons>
-                <a href={local_camilo_cv} target="_blank">
-                    <MyButtonHighLight type="button" className="btn">Curriculo PDF</MyButtonHighLight></a>
-                    <MyButton type="button" className="btn">Contato</MyButton>
+                    <a href={local_camilo_cv} target="_blank">
+                        <MyButtonHighLight type="button" className="btn">
+                        Curriculo PDF
+                        </MyButtonHighLight>
+                    </a>
+                    <a href="/#projects">
+                        <MyButton type="button" className="btn">
+                        Portifólio
+                        </MyButton>
+                    </a>
                 </Buttons> 
             </BoxLeft>
             <BoxRight>
