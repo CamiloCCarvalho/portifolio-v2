@@ -1,3 +1,3 @@
-const local_camilo_cv = '../../public/camilo_cv.pdf'
+const local_camilo_cv = '../../camilo_cv.pdf'
 
 export default local_camilo_cv
