@@ -51,7 +51,16 @@ const ContainerPort:React.FC = () => {
                 <CardProject>
                     <MdOutlineWeb size="84"/>
                     <NameProject>
-                        ClonePage - MusicDot
+                        Pagina Clone (Music Dot)
+                    </NameProject>
+                </CardProject>
+            </Link>
+
+            <Link className="linkRef" to="https://cotral.vercel.app" target="_blank">
+                <CardProject>
+                    <MdOutlineWeb size="84"/>
+                    <NameProject>
+                        Projeto Pessoal - Cotral Calculadora de Caixa
                     </NameProject>
                 </CardProject>
             </Link>

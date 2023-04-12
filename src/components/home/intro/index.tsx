@@ -1,4 +1,5 @@
-import {useState, useEffect, useRef} from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import local_camilo_cv from '../../../utils/localDocs'
 
 import {BoxLeft, BoxRight, Buttons, MyButton, MyButtonHighLight, Title, HomeText, HomeTextPersonal, TypedText, CursorText, HomeImage, Intro} from './styles'
@@ -71,11 +72,11 @@ const ContainerIntro:React.FC = () => {
             <BoxLeft>
                 <HomeImage src="https://raw.githubusercontent.com/CamiloCCarvalho/portifolio-v2/main/src/assets/camilocosta.png" alt="ImG"/>
                 <Buttons>
-                    <a href={local_camilo_cv} target="_blank">
+                    <Link to={local_camilo_cv} target="_blank">
                         <MyButtonHighLight type="button" className="btn">
                         Curriculo PDF
                         </MyButtonHighLight>
-                    </a>
+                    </Link>
                     <a href="/#projects">
                         <MyButton type="button" className="btn">
                         Portifólio
