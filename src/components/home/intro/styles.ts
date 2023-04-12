@@ -60,13 +60,13 @@ export const Buttons = styled.figcaption`
     align-items: center;
     justify-content:space-around;
     padding:20px;
-    display:none;
 `
 export const MyButton = styled.button`
     background: ${props => props.theme.colors.highlight};
     width:fit-content;
     padding: 2px 10px;
     color: ${props => props.theme.colors.background};
+    display:none;
 
     &:hover {
         background: ${props => props.theme.colors.text};

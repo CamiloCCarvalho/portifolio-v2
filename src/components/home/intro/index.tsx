@@ -1,6 +1,7 @@
 import {useState, useEffect, useRef} from 'react'
+import local_camilo_cv from '../../../utils/localDocs'
 
-import {BoxLeft, BoxRight,Buttons,MyButton, MyButtonHighLight, Title, HomeText, HomeTextPersonal, TypedText, CursorText, HomeImage, Intro} from './styles'
+import {BoxLeft, BoxRight, Buttons, MyButton, MyButtonHighLight, Title, HomeText, HomeTextPersonal, TypedText, CursorText, HomeImage, Intro} from './styles'
 
 const ContainerIntro:React.FC = () => {
     const screenRef = useRef<HTMLDivElement>(null)
@@ -70,7 +71,8 @@ const ContainerIntro:React.FC = () => {
             <BoxLeft>
                 <HomeImage src="https://raw.githubusercontent.com/CamiloCCarvalho/portifolio-v2/main/src/assets/camilocosta.png" alt="ImG"/>
                 <Buttons>
-                    <MyButtonHighLight type="button" className="btn">Download CV</MyButtonHighLight>
+                <a href={local_camilo_cv} target="_blank">
+                    <MyButtonHighLight type="button" className="btn">Curriculo PDF</MyButtonHighLight></a>
                     <MyButton type="button" className="btn">Contato</MyButton>
                 </Buttons> 
             </BoxLeft>
