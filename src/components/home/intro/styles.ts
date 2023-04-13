@@ -65,6 +65,8 @@ export const MyButton = styled.button`
     background: ${props => props.theme.colors.highlight};
     width:fit-content;
     padding: 2px 10px;
+    border-bottom: 1px solid cyan;
+    border-radius: 0 10px 0 0;
     color: ${props => props.theme.colors.background};
 
     &:hover {
@@ -79,6 +81,8 @@ export const MyButtonHighLight = styled.button`
     width:fit-content;
     padding: 2px 10px;
     margin-right: 20px;
+    border-bottom: 1px solid cyan;
+    border-radius: 0 10px 0 0;
     color: ${props => props.theme.colors.textNav};
     font-style: bold;
 
