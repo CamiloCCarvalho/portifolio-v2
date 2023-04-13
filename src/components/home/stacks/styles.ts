@@ -12,12 +12,13 @@ export const Stacks = styled.section`
 `
 
 export const TitleStacks = styled.h2`
-    padding: 20px 0;
+    padding: 40px 0;
     font-family: 'Monserrat', sans-serif;
     font-weight: 800;
 `
 export const GridStacks = styled.div`
     padding: 20px 20px;
+    margin-bottom: 40px;
     display: flex;
     flex-flow: row wrap;
     align-items:center;

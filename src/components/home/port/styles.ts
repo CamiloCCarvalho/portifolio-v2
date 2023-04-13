@@ -11,12 +11,13 @@ export const Port = styled.section`
 `
 
 export const TitleProjects = styled.h2`
-    padding: 20px 0;
+    padding: 40px 0;
     font-family: 'Monserrat', sans-serif;
     font-weight: 800;
 `
 export const GridProjects = styled.div`
     padding: 40px 20px;
+    margin-bottom: 40px;
     display: flex;
     flex-flow: row wrap;
     align-items:center;

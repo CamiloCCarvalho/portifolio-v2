@@ -1,14 +1,14 @@
 import {Stacks, TitleStacks, GridStacks, CardStack, StyledIcon, NameStacks} from './styles'
 
-import {DiBootstrap, DiCss3, DiGit, 
-        DiGithub, DiHtml5, DiJavascript,
+import {DiBootstrap, DiGit, 
+        DiGithub, DiJavascript,
         DiReact, DiSass, DiNpm, DiNodejs} from 'react-icons/di'
 
-import { SiTypescript, SiStyledcomponents, SiWebpack, SiBabel, SiVercel, SiVisualstudiocode, SiVite, SiPostgresql, SiSequelize, SiMongodb } from 'react-icons/si'
+import { SiTypescript, SiStyledcomponents, SiVercel, SiVisualstudiocode, SiVite, SiPostgresql, SiSequelize, SiMongodb } from 'react-icons/si'
 
 const ContainerStacks:React.FC = () => {
-    const icons = [ <DiReact/>, <DiBootstrap/>, <DiGit/>, <DiCss3/>, <DiHtml5/>, <DiGithub/>, <DiJavascript/>, <DiSass/>, <DiNpm/>, <DiNodejs/>, <SiTypescript size="30"/>, <SiStyledcomponents size="40"/>, <SiWebpack size="30"/>, <SiBabel size="30"/>, <SiVercel size="30"/>, <SiVisualstudiocode size="30"/>, <SiVite size="30"/>, <SiPostgresql size="30"/>, <SiSequelize size="30"/>, <SiMongodb size="30"/> ]
-    const names = ["React", "BootStrap", "Git", "Css", "Html", "GitHub", "JavaScript", "Sass", "Npm", "NodeJS", "TypeScript", "Styled Components", "WebPack", "Babel", "Vercel", "VS Code", "Vite", "PostgreSQL", "Sequelize", "MongoDB" ]
+    const icons = [ <DiReact/>, <DiBootstrap/>, <DiGit/>, <DiGithub/>, <DiJavascript/>, <DiSass/>, <DiNpm/>, <DiNodejs/>, <SiTypescript size="30"/>, <SiStyledcomponents size="40"/>, <SiVercel size="30"/>, <SiVisualstudiocode size="30"/>, <SiVite size="30"/>, <SiPostgresql size="30"/>, <SiSequelize size="30"/>, <SiMongodb size="30"/> ]
+    const names = ["React", "BootStrap", "Git", "GitHub", "JavaScript", "Sass", "Npm", "NodeJS", "TypeScript", "Styled Components", "Vercel", "VS Code", "Vite", "PostgreSQL", "Sequelize", "MongoDB" ]
 
     return (
         <Stacks className="container-fluid m-0 p-0">
