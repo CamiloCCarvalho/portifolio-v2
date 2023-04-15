@@ -10,6 +10,7 @@ import Portifolio from './routes/portifolio'
 import ClockD from './routes/port/clockd'
 import ClockA from './routes/port/clocka'
 import HashGame from './routes/port/hashgame'
+import Calc from './routes/port/calc'
 
 const routers = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const routers = createBrowserRouter([
       {
         path:'/portifolio/hashgame',
         element: <HashGame />
+      },
+      {
+        path:'/portifolio/calc',
+        element: <Calc />
       }
     ]
   }
