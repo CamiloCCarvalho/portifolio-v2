@@ -38,7 +38,7 @@ const ContainerPort:React.FC = () => {
                 </CardProject>
             </Link>
             
-            <Link className="linkRef" to="/portifolio/calc">
+            <Link className="linkRef" to="/portifolio/calc" style={{display: "none"}}>
                 <CardProject >
                     <MdCalculate size="84"/>
                     <NameProject>
