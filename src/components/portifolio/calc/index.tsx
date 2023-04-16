@@ -1,43 +1,43 @@
-import {ContainerPage, CalcBox} from './styles'
+import {ContainerPage, CalcBox, Header, Input, Keyboard, Keys, Section} from './styles'
 
 const CalcPage:React.FC = () => {
 
     return (
         <ContainerPage className="container-fluid">
             <CalcBox>
-                <header className="flex align-center justify-between">
+                <Header className="flex align-center justify-between">
                     <h1>Calc.js</h1>
-                </header>
+                </Header>
 
-                <input type="text" id="input"/>
+                <Input type="text" id="input"/>
 
-                <div id="keys">
-                    <button id="clear">C</button>
-                    <button className="charKey" data-value=" ( ">(</button>
-                    <button className="charKey" data-value=" ) ">)</button>
-                    <button className="charKey" data-value=" / ">/</button>
-                    <button className="charKey" data-value="7">7</button>
-                    <button className="charKey" data-value="8">8</button>
-                    <button className="charKey" data-value="9">9</button>
-                    <button className="charKey" data-value=" * ">*</button>
-                    <button className="charKey" data-value="4">4</button>
-                    <button className="charKey" data-value="5">5</button>
-                    <button className="charKey" data-value="6">6</button>
-                    <button className="charKey" data-value=" - ">-</button>
-                    <button className="charKey" data-value="1">1</button>
-                    <button className="charKey" data-value="2">2</button>
-                    <button className="charKey" data-value="3">3</button>
-                    <button className="charKey" data-value=" + ">+</button>
-                    <button className="charKey" data-value="0">0</button>
-                    <button className="charKey" data-value=".">.</button>
-                    <button className="charKey" data-value=" % ">mod</button>
-                    <button id="equal">=</button>
-                </div>
+                <Keyboard id="keys">
+                    <Keys id="clear">C</Keys>
+                    <Keys className="charKey" data-value=" ( ">(</Keys>
+                    <Keys className="charKey" data-value=" ) ">)</Keys>
+                    <Keys className="charKey" data-value=" / ">/</Keys>
+                    <Keys className="charKey" data-value="7">7</Keys>
+                    <Keys className="charKey" data-value="8">8</Keys>
+                    <Keys className="charKey" data-value="9">9</Keys>
+                    <Keys className="charKey" data-value=" * ">*</Keys>
+                    <Keys className="charKey" data-value="4">4</Keys>
+                    <Keys className="charKey" data-value="5">5</Keys>
+                    <Keys className="charKey" data-value="6">6</Keys>
+                    <Keys className="charKey" data-value=" - ">-</Keys>
+                    <Keys className="charKey" data-value="1">1</Keys>
+                    <Keys className="charKey" data-value="2">2</Keys>
+                    <Keys className="charKey" data-value="3">3</Keys>
+                    <Keys className="charKey" data-value=" + ">+</Keys>
+                    <Keys className="charKey" data-value="0">0</Keys>
+                    <Keys className="charKey" data-value=".">.</Keys>
+                    <Keys className="charKey" data-value=" % ">mod</Keys>
+                    <Keys id="equal">=</Keys>
+                </Keyboard>
 
-                <section className="flex align-center justify-between">
-                    <button id="copyToClipboard">Copy</button>
-                    <input type="text" id="result" disabled/>
-                </section>
+                <Section className="flex align-center justify-between">
+                    <Keys id="copyToClipboard">Copy</Keys>
+                    <Input type="text" id="result" disabled/>
+                </Section>
 
             </CalcBox>
         </ContainerPage>
