@@ -1,13 +1,8 @@
-import { constants } from 'buffer'
 import {ContainerPage, CalcBox, Header, Input, Keyboard, Keys, Section} from './styles'
-
 import {useState, useEffect} from 'react'
 
-
-
 const CalcPage:React.FC = () => {
-    console.log("renderizou")
-    const allowedKeys = ['(', ')', '/', '*', '-', '+', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0', '.', ',', '%', ' ']
+    const allowedKeys = ['(', ')', '/', '*', '-', '+', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0', '.', '%', ' ']
 
     let inputElement:HTMLInputElement|null
     let keysElements:NodeListOf<HTMLButtonElement>
@@ -60,6 +55,7 @@ const CalcPage:React.FC = () => {
         })
     },[input])
 
+    //effectState input button screen click
     useEffect(()=>{
         keys?.forEach((charKeyButton)=> {
             charKeyButton.addEventListener('click', () => {
@@ -95,7 +91,7 @@ const CalcPage:React.FC = () => {
                     <h1>Calc.js</h1>
                 </Header>
 
-                <Input type="text" id="input"/>
+                <Input type="text" inputMode='numeric' id="input"/>
 
                 <Keyboard id="keys">
                     <Keys id="clear">C</Keys>
