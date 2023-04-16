@@ -91,7 +91,7 @@ const CalcPage:React.FC = () => {
                     <h1>Calc.js</h1>
                 </Header>
 
-                <Input type="text" inputMode='numeric' id="input"/>
+                <Input type="text" inputMode='tel' id="input"/>
 
                 <Keyboard id="keys">
                     <Keys id="clear">C</Keys>
