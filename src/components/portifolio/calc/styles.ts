@@ -8,7 +8,7 @@ export const ContainerPage = styled.main`
     height:100vh;
 `
 
-export const CalcBox = styled.main`
+export const CalcBox = styled.div`
     height: 520px;
     min-width: 300px;
     width: 40%;
@@ -37,10 +37,20 @@ export const Input = styled.input`
     padding:0 0.5rem;
     height:50px;
     margin: 20px 0;
+    text-align:end;
+    color: ${props => props.theme.colors.secundary};
+    padding-right: 20px;
+    font-size: 1.6rem;
+    &:focus {
+        color: ${props => props.theme.colors.secundary};
+        padding-right: 20px;
+        outline-offset: -2px;
+        outline: 2px solid cyan;
+    }
     &#result {
-        height:30px;
-        width:50%;
-        border-width: 1px 1px 2px 1px;
+        height:31px;
+        width:100%;
+        border-width: 1px 1px 2px 0;
         border-radius: 0 .5rem .1rem 0;
     }
 `
@@ -53,7 +63,6 @@ export const Keyboard = styled.div`
     
 `
 export const Keys = styled.button`
-    box-sizing:border-box;
     border: none;
     border-radius: 2px 6px 2px 2px;
     background: ${props => props.theme.colors.textNav};
@@ -64,8 +73,17 @@ export const Keys = styled.button`
     font-size:1.2rem;
     transition: 0.5s;
     &#copyToClipboard {
-        height: 2rem;
+        height:auto;
+        margin:0;
+        padding:0;
+        border-radius: 8px 0 0 0;
         width:5rem;
+        border-bottom:2px solid cyan;
+        border-top:1px solid cyan;
+        border-right: 2px solid cyan;
+    }
+    &#copyToClipboard:hover {
+        border-right: 2px solid cyan;
     }
     &:hover {
         filter: brightness(0.8);
