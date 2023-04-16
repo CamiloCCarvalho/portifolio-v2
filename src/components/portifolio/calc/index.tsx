@@ -1,5 +1,6 @@
 import {ContainerPage, CalcBox, Header, Input, Keyboard, Keys, Section} from './styles'
 import {useState, useEffect} from 'react'
+import { BsFillSaveFill } from 'react-icons/bs'
 
 const CalcPage:React.FC = () => {
     const allowedKeys = ['(', ')', '/', '*', '-', '+', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0', '.', '%', ' ']
@@ -76,10 +77,18 @@ const CalcPage:React.FC = () => {
         })
     },[keys])
 
+    //calculate result
     function calc():void{
         if(input){
+            //danger! eval needs filter characters 
             const result = String(eval(input.value))
-            if(inputRes)inputRes.value = result
+            if(inputRes){
+                if(result == 'undefined'){
+                    inputRes.value = ''
+                } else {
+                    inputRes.value = result
+                }
+            }
         }
         input?.focus()
     }
@@ -87,7 +96,7 @@ const CalcPage:React.FC = () => {
     return (
         <ContainerPage className="container-fluid">
             <CalcBox id="main">
-                <Header className="flex align-center justify-between">
+                <Header>
                     <h1>Calc.js</h1>
                 </Header>
 
@@ -116,8 +125,10 @@ const CalcPage:React.FC = () => {
                     <Keys id="equal">=</Keys>
                 </Keyboard>
 
-                <Section className="flex align-center justify-between">
-                    <Keys id="copyToClipboard">Copy</Keys>
+                <Section>
+                    <Keys id="copyToClipboard">
+                        <BsFillSaveFill size="18"/>
+                    </Keys>
                     <Input type="text" id="result" disabled/>
                 </Section>
 

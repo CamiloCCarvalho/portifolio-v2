@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerPage = styled.main`
+    font-family: sans-serif;
     display:flex;
     flex-flow: column nowrap;
     align-items:center;
@@ -23,8 +24,9 @@ export const CalcBox = styled.div`
 `
 export const Header = styled.header`
     display:flex;
+    width:80%;
     flex-flow: row nowrap;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     padding: 1rem 0;
 `
@@ -78,7 +80,7 @@ export const Keys = styled.button`
         padding:0;
         border-radius: 8px 0 0 0;
         width:5rem;
-        border-bottom:2px solid cyan;
+        border-bottom:1px solid cyan;
         border-top:1px solid cyan;
         border-right: 2px solid cyan;
     }
