@@ -11,12 +11,4 @@ export const FooterBox = styled.footer`
     box-shadow:0 8px 60px rgba(0,500,500, 0.3);
 
 `
-// display: flex;
-// align-items:center;
-// padding: 0 10px;
-// justify-content: space-between;
-// height: 100px;
-//     width: 100%;
-// position:absolute;
-//     bottom:0;
-//     left:0;
+    

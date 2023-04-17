@@ -11,3 +11,4 @@ export default {
         text: '#191919', //white
     },
 }
+    

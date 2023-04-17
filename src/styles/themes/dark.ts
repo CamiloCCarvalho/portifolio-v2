@@ -11,3 +11,4 @@ export default {
         highlight: '#0FA3B1', //blue
     },
 }
+    

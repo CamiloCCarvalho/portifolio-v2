@@ -1,8 +1,4 @@
 import CalcPage from '../../components/portifolio/calc'
-
-const Calc:React.FC = () => {
-    return (
-        <CalcPage/>
-    )
-}
+const Calc:React.FC = () => <CalcPage/>
 export default Calc
+    

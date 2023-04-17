@@ -14,5 +14,5 @@ declare module 'styled-components'{
             highlight: string,
         }
     }
-
+    
 }

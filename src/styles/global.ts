@@ -21,4 +21,5 @@ export default createGlobalStyle`
     body::-webkit-scrollbar-thumb {
         background: ${props => props.theme.colors.highlight};
       }
-`;
+`
+      
