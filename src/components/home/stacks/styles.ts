@@ -16,7 +16,7 @@ export const TitleStacks = styled.h2`
     font-family: 'Monserrat', sans-serif;
     font-weight: 800;
 `
-export const GridStacks = styled.div`
+export const GridStacks = styled.ul`
     padding: 20px 20px;
     margin-bottom: 40px;
     display: flex;
@@ -25,9 +25,15 @@ export const GridStacks = styled.div`
     justify-content: center;
     gap: 18px;
     width: 90%;
+
+    &:has(li:hover) li:not(:hover) {
+        transition: 1.0s;
+        opacity: 0.9;
+        scale: 0.98;
+    }
 `
 
-export const CardStack = styled.div`
+export const CardStack = styled.li`
     width:126px;
     height:126px;
     background: ${props => props.theme.colors.background};

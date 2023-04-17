@@ -15,7 +15,7 @@ export const TitleProjects = styled.h2`
     font-family: 'Monserrat', sans-serif;
     font-weight: 800;
 `
-export const GridProjects = styled.div`
+export const GridProjects = styled.ul`
     padding: 40px 20px;
     margin-bottom: 40px;
     display: flex;
@@ -24,12 +24,19 @@ export const GridProjects = styled.div`
     justify-content: center;
     gap: 18px;
     width: 90%;
+
     & > .linkRef {
         text-decoration:none;
     }
+
+    &:has(li:hover) li:not(:hover) {
+        transition: 1.0s;
+        opacity: 0.9;
+        scale: 0.98;
+    }
 `
 
-export const CardProject = styled.div`
+export const CardProject = styled.li`
     width:350px;
     height:250px;
     background: ${props => props.theme.colors.highlight};
@@ -41,6 +48,7 @@ export const CardProject = styled.div`
     word-wrap: break-word;
     border-radius: 20px 2px 2px 2px;
     border-bottom: 2px solid cyan;
+
 `
 
 export const NameProject = styled.p`
