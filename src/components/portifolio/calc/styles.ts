@@ -74,6 +74,7 @@ export const Keys = styled.button`
     border-bottom:1px solid cyan;
     font-size:1.2rem;
     transition: 0.5s;
+
     &#copyToClipboard {
         height:auto;
         margin:0;
@@ -86,6 +87,9 @@ export const Keys = styled.button`
     }
     &#copyToClipboard:hover {
         border-right: 2px solid cyan;
+    }
+    &#copyToClipboard.success {
+        background: green;
     }
     &:hover {
         filter: brightness(0.8);

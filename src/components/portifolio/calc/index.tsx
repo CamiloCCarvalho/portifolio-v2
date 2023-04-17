@@ -10,6 +10,7 @@ const CalcPage:React.FC = () => {
     let keyClearElement:HTMLButtonElement|null
     let keyIqualElement:HTMLButtonElement|null
     let inputResElement:HTMLInputElement|null
+    let keyCopyResult:HTMLButtonElement|null
 
     //load Elements
     const [input, setInput] = useState<HTMLInputElement|null>()
@@ -17,6 +18,7 @@ const CalcPage:React.FC = () => {
     const [keyClear, setKeyClear] = useState<HTMLButtonElement|null>()
     const [keyEqual, setKeyEqual] = useState<HTMLButtonElement|null>()
     const [inputRes, setInputRes] = useState<HTMLInputElement|null>()
+    const [keyCopy, setKeyCopy] = useState<HTMLButtonElement|null>()
     useEffect(() => {
         inputElement = document.querySelector("#input")
         setInput(inputElement)
@@ -28,21 +30,21 @@ const CalcPage:React.FC = () => {
         setKeyEqual(keyIqualElement)
         inputResElement = document.querySelector('#result')
         setInputRes(inputResElement)
+        keyCopyResult = document.querySelector('#copyToClipboard')
+        setKeyCopy(keyCopyResult)
     },[])
     
-    //effectState input change
+    //effectState input change by keyboard
     useEffect(()=> {
         input?.addEventListener('keydown', function (ev:any){
             ev.preventDefault()
         
-            //allow keyboard keys input
             if(allowedKeys.includes(ev.key)) {
             input.value += ev.key
             console.log(`digitou: ${ev.key}`)
             return
             }
     
-            //allow keybord key backspace
             if(ev.key === 'Backspace') {
                 input.value = (input.value) 
                 ? input.value.slice(0, -1)
@@ -56,7 +58,7 @@ const CalcPage:React.FC = () => {
         })
     },[input])
 
-    //effectState input button screen click
+    //effectState input by buttons on screen
     useEffect(()=>{
         keys?.forEach((charKeyButton)=> {
             charKeyButton.addEventListener('click', () => {
@@ -74,6 +76,15 @@ const CalcPage:React.FC = () => {
         keyEqual?.addEventListener('click', () =>{
             calc()
             input?.focus()
+        })
+        keyCopy?.addEventListener('click', (e) => {
+            if(!(keyCopy.classList.contains('success'))){
+                keyCopy.classList.add('success')
+                if(inputRes)
+                    navigator.clipboard.writeText(inputRes.value)
+            } else {
+                keyCopy.classList.remove('success')
+            }
         })
     },[keys])
 
@@ -126,7 +137,7 @@ const CalcPage:React.FC = () => {
                 </Keyboard>
 
                 <Section>
-                    <Keys id="copyToClipboard">
+                    <Keys id="copyToClipboard" className="copy">
                         <BsFillSaveFill size="18"/>
                     </Keys>
                     <Input type="text" id="result" disabled/>
