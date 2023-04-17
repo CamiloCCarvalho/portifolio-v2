@@ -55,6 +55,14 @@ export const Input = styled.input`
         border-width: 1px 1px 2px 0;
         border-radius: 0 .5rem .1rem 0;
     }
+    &#result.error {
+        color:white;
+        background:red;
+    }
+    &#result.clear {
+        color:${props => props.theme.colors.secundary};
+        background:${props => props.theme.colors.background};
+    }
 `
 export const Keyboard = styled.div`
     width:80%;

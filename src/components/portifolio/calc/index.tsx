@@ -90,16 +90,29 @@ const CalcPage:React.FC = () => {
 
     //calculate result
     function calc():void{
-        if(input){
-            //danger! eval needs filter characters 
-            const result = String(eval(input.value))
-            if(inputRes){
+        try {
+            if(input && inputRes){
+                //danger! eval needs filter characters 
+                const result = String(eval(input.value))
+    
                 if(result == 'undefined'){
                     inputRes.value = ''
                 } else {
                     inputRes.value = result
                 }
             }
+        }catch(e) {
+            if(input && inputRes){
+                inputRes.classList.add('error')
+                inputRes.value = 'ERROR'
+                setTimeout(() => {
+                    inputRes.classList.remove('error')
+                    inputRes.classList.add('clear')
+                    inputRes.value = ''
+                    input.value = ''
+                }, 2000)
+            }
+            console.log("Revise seu Calculo, digite Calculos validos!" + e)
         }
         input?.focus()
     }
