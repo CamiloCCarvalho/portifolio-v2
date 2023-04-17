@@ -57,3 +57,4 @@ export const NameStacks = styled.p`
     word-wrap: break-word;
     text-align:center;
 `
+    

@@ -56,3 +56,4 @@ export const NameProject = styled.p`
     text-align:center;
     
 `
+    
