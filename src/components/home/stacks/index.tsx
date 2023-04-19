@@ -11,41 +11,43 @@ import { SiTypescript, SiStyledcomponents, SiVercel, SiVisualstudiocode, SiVite,
 
 const ContainerStacks:React.FC = () => {
     //animation
-    const debounce = (func:any, wait:number, immediate?:any) => {
-        let timeout:any
-        return function (...args:any[]) {
-            const context:any = this
-            const later = () => {
-                timeout = null
-                if(!immediate) func.apply(context, args)
-            }
-            const callNow:any = immediate && timeout
-            clearTimeout(timeout)
-            timeout = setTimeout(later, wait)
-            if (callNow) func.apply(context, args)
-        } 
-    }
-    const targets = document.querySelectorAll('[data-anime]')
-    console.log(targets)
-    const animationClass = 'animate'
+//    const debounce = (func:any, wait:number, immediate?:any) => {
+//        let timeout:any
+//        return function (...args:any[]) {
+//            const context:any = this
+//            const later = () => {
+//                timeout = null
+//                if(!immediate) func.apply(context, args)
+//            }
+//            const callNow:any = immediate && timeout
+//            clearTimeout(timeout)
+//            timeout = setTimeout(later, wait)
+//            if (callNow) func.apply(context, args)
+//        } 
+//    }
+//    const targets = document.querySelectorAll('[data-anime]')
+//    console.log(targets)
+//    const animationClass = 'animate'
+//
+//    function animeScroll() {
+//        const windowTop = window.pageYOffset + ((window.innerHeight * 3) /4);
+//        console.log(windowTop)
+//
+//        targets.forEach((element) => {
+//            if(windowTop > element.offsetTop){
+//                element.classList.add(animationClass)
+//            } else {
+//                element.classList.remove(animationClass)
+//            }
+//        })  
+//    }
+//    if(targets.length){
+//        window.addEventListener('scroll', debounce(() => {
+//            animeScroll()
+//        }, 200))
+//    }
 
-    function animeScroll() {
-        const windowTop = window.pageYOffset + ((window.innerHeight * 3) /4);
-        console.log(windowTop)
 
-        targets.forEach((element) => {
-            if(windowTop > element.offsetTop){
-                element.classList.add(animationClass)
-            } else {
-                element.classList.remove(animationClass)
-            }
-        })  
-    }
-    if(targets.length){
-        window.addEventListener('scroll', debounce(() => {
-            animeScroll()
-        }, 200))
-    }
     //list icons
     const icons:JSX.Element[] = [ <DiReact/>, <DiBootstrap/>, <DiGit/>, <DiGithub/>, <DiJavascript/>, <DiSass/>, <DiNpm/>, <DiNodejs/>, <SiTypescript size="30"/>, <SiStyledcomponents size="40"/>, <SiVercel size="30"/>, <SiVisualstudiocode size="30"/>, <SiVite size="30"/>, <SiPostgresql size="30"/>, <SiSequelize size="30"/>, <SiMongodb size="30"/> ]
 
