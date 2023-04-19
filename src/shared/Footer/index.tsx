@@ -1,5 +1,5 @@
 import {useContext} from 'react'
-import { ThemeContext } from 'styled-components'
+import {ThemeContext} from 'styled-components'
 import {FooterBox} from '../../shared/Footer/styles'
 import {RiCodeSSlashLine} from "react-icons/ri";
 
