@@ -9,27 +9,6 @@ import { SiTypescript, SiStyledcomponents, SiVercel, SiVisualstudiocode, SiVite,
 
 const ContainerStacks:React.FC = () => {
     //animation
-    const targets = document.querySelectorAll('[data-anime]')
-    console.log(targets)
-    const animationClass = 'animate'
-
-    function animeScroll() {
-        const windowTop = window.pageYOffset + ((window.innerHeight * 3) /4);
-        console.log(windowTop)
-
-        targets.forEach((element:any) => {
-            if(windowTop > element.offsetTop){
-                element.classList.add(animationClass)
-            } else {
-                element.classList.remove(animationClass)
-            }
-        })  
-    }
-    if(targets.length){
-        window.addEventListener('scroll', () => {
-            animeScroll()
-        })
-    }
     //list icons
     const icons:JSX.Element[] = [ <DiReact/>, <DiBootstrap/>, <DiGit/>, <DiGithub/>, <DiJavascript/>, <DiSass/>, <DiNpm/>, <DiNodejs/>, <SiTypescript size="30"/>, <SiStyledcomponents size="40"/>, <SiVercel size="30"/>, <SiVisualstudiocode size="30"/>, <SiVite size="30"/>, <SiPostgresql size="30"/>, <SiSequelize size="30"/>, <SiMongodb size="30"/> ]
 
