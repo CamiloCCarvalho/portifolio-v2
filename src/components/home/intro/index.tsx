@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import local_camilo_cv from '../../../utils/localDocs'
 
+
 import {BoxLeft, BoxRight, Buttons, MyButton, MyButtonHighLight, Title, HomeText, HomeTextPersonal, TypedText, CursorText, HomeImage, Intro} from './styles'
 
 const ContainerIntro:React.FC = () => {
