@@ -56,9 +56,9 @@ const ContainerStacks:React.FC = () => {
 
     return (
         <Stacks className="container-fluid m-0 p-0">
-            <TitleStacks data-anime="left">Stacks & Ferramentas</TitleStacks>
+            <TitleStacks>Stacks & Ferramentas</TitleStacks>
 
-            <GridStacks data-anime="right">
+            <GridStacks>
                     {icons.map((icon, index)=>(
                         <CardStack key={"card" + index.toString()}>
                             <StyledIcon key={index.toString()}>{icon}</StyledIcon>
