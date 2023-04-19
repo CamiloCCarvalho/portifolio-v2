@@ -1,4 +1,13 @@
-import styled from 'styled-components'
+import styled, { keyframes }from 'styled-components'
+
+const slideIntro = keyframes`
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+`
 
 //Container Mid
 export const Port = styled.section`
@@ -14,6 +23,7 @@ export const TitleProjects = styled.h2`
     padding: 40px 0;
     font-family: 'Monserrat', sans-serif;
     font-weight: 800;
+    animation: ${slideIntro} 2.2s;
 `
 export const GridProjects = styled.ul`
     padding: 40px 20px;
@@ -24,6 +34,7 @@ export const GridProjects = styled.ul`
     justify-content: center;
     gap: 18px;
     width: 90%;
+    animation: ${slideIntro} 2.2s;
 
     & > .linkRef {
         text-decoration:none;

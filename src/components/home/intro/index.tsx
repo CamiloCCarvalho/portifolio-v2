@@ -70,7 +70,7 @@ const ContainerIntro:React.FC = () => {
     return (
         <Intro className="container-fluid" ref={screenRef}>
             <BoxLeft>
-                <HomeImage src="https://raw.githubusercontent.com/CamiloCCarvalho/portifolio-v2/main/src/assets/camilocosta.png" alt="ImG"/>
+                <HomeImage src="/camilocosta.png" alt="Imagem ilustrativa de Camilo"/>
                 <Buttons>
                     <Link to={local_camilo_cv} target="_blank">
                         <MyButtonHighLight type="button" className="btn">

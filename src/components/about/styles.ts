@@ -1,6 +1,13 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
-
+const slideIntro = keyframes`
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+`
 export const ContainerAbout = styled.section`
     height: auto;
     display:flex;
@@ -20,6 +27,7 @@ export const CardAbout = styled.div`
     border-radius: 2px 20px 20px 2px;
     border-left: 2px solid cyan;
     box-shadow: inset 0 -20px 5px rgba(0,500,500, 0.5);
+    animation: ${slideIntro} 2.2s;
 `
 
 export const Text = styled.p`

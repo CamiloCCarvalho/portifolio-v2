@@ -10,7 +10,14 @@ const blink = keyframes`
     99% { background-color: transparent; }
     100%  { background-color: #ccc; }
 `
-
+const slideIntro = keyframes`
+    from {
+        opacity:0%;
+    }
+    to {
+        opacity:100%;
+    }
+`
 export const Intro = styled.div`
     height:auto;
     display:flex;
@@ -31,6 +38,9 @@ export const BoxLeft = styled.figure`
     width:auto;
     height:auto;
     padding:25px;
+
+    animation: ${slideIntro} 3s;
+
     @media(max-width: 968px) {
         padding: 80px 25px;
     }
@@ -42,6 +52,8 @@ export const BoxRight = styled.section`
     height:auto;
     margin:0;
     max-width:750px;
+    animation: ${slideIntro} 2.2s;
+
 `
 
 //Content Intro - left side
