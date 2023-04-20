@@ -1,7 +1,7 @@
 {
   "name": "vite-basic-react",
   "private": true,
-  "version": "2.0.14",
+  "version": "2.1.02",
   "type": "module",
   "scripts": {
     "dev": "vite",
