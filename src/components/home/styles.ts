@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const ContainerHome = styled.div`
+export const ContainerHome = styled.section`
     font-family: 'Montserrat', sans-serif;
     height: auto;
     display:flex;
