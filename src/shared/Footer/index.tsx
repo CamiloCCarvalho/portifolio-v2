@@ -20,7 +20,7 @@ const Footer:React.FC = () => {
                 </div>
 
                 <div className="card-footer">
-                   Atualizado: 17/04/2023 ---  Versão: 2.1.02
+                   Atualizado: 20/04/2023 ---  Versão: 2.1.05
                 </div>
             </FooterBox>
     )
