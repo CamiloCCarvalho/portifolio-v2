@@ -2,8 +2,10 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
 export const ContainerNav = styled.header`
+    position: fixed;
+    z-index:999;
     height: 60px;
-    width:auto;
+    width:100%;
     background: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.text};
     display: flex;
@@ -12,7 +14,6 @@ export const ContainerNav = styled.header`
     justify-content: space-between;
     border-bottom: 1px solid ${props => props.theme.colors.secundary};
     box-shadow:0 -8px 60px rgba(0,500,500, 0.3);
-
 `
 export const DropDownMenu = styled.div`
     background: ${props => props.theme.colors.primary};
