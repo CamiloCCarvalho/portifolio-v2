@@ -72,7 +72,7 @@ const ContainerIntro:React.FC = () => {
     }
 
     return (
-        <Intro className="container-fluid">
+        <Intro className="container-fluid pt-5">
             <BoxLeft>
                 <HomeImage src="/camilocosta.png" alt="Imagem ilustrativa de Camilo"/>
                 <Buttons>
