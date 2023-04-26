@@ -18,7 +18,7 @@ const ContainerIntro:React.FC = () => {
         charIndex: number
     }
     let anima: animation = {
-        textArray: [" é Dificil!", " é Divertido!", " é Uma jornada!", " é VIDA!"],
+        textArray: [" é Difícil!", " é Divertido!", " é Uma jornada!", " é VIDA!"],
         typingDelay: 200,
         erasingDelay: 100,
         newTextDelay: 2000,

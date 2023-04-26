@@ -17,7 +17,7 @@ const ContainerPort:React.FC = () => {
                 <CardProject>
                     <IoMdWatch size="84"/>
                     <NameProject>
-                        Relogio Digital
+                        Relógio Digital
                     </NameProject>
                 </CardProject>
             </Link>
@@ -25,7 +25,7 @@ const ContainerPort:React.FC = () => {
                     <CardProject>
                         <BsFillStopwatchFill size="84"/>
                         <NameProject>
-                            Relogio Analogico
+                            Relógio Analógico
                         </NameProject>
                     </CardProject>
                 </Link>
@@ -51,7 +51,7 @@ const ContainerPort:React.FC = () => {
                 <CardProject>
                     <MdOutlineWeb size="84"/>
                     <NameProject>
-                        Pagina Clone (Music Dot)
+                        Página Clone (Music Dot)
                     </NameProject>
                 </CardProject>
             </Link>

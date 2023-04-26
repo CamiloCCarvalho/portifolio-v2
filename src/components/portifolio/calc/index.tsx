@@ -1,4 +1,7 @@
-import {ContainerPage, CalcBox, Header, Input, Keyboard, Keys, Section} from './styles'
+import {ContainerPage, CalcBox,
+    Header, Input, Keyboard,
+    Keys, Section} from './styles'
+
 import {useState, useEffect} from 'react'
 import { BsFillSaveFill } from 'react-icons/bs'
 
@@ -19,6 +22,8 @@ const CalcPage:React.FC = () => {
     const [keyEqual, setKeyEqual] = useState<HTMLButtonElement|null>()
     const [inputRes, setInputRes] = useState<HTMLInputElement|null>()
     const [keyCopy, setKeyCopy] = useState<HTMLButtonElement|null>()
+
+    
     useEffect(() => {
         inputElement = document.querySelector("#input")
         setInput(inputElement)

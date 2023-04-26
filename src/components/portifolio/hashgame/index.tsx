@@ -33,10 +33,9 @@ const HashGamePage:React.FC = () => {
              cell.classList.remove('x')
              cell.classList.remove('circle')
          }
-        
          setBoardHoverClass()
-
      }
+
      const endGame = (isDraw: any) => {
          if(isDraw) {
             (winTextRef.current ?? { innerText: "" }).innerText = "Empate!"
@@ -137,3 +136,4 @@ const HashGamePage:React.FC = () => {
 }
 
 export default HashGamePage
+    

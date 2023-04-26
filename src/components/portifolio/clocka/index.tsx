@@ -1,5 +1,9 @@
 import {useState, useEffect} from 'react'
-import {ClockPage, Clock, Hour, Min, Sec, Hpointer, Mpointer, Spointer} from './styles'
+
+import {ClockPage, Clock,
+    Hour, Min, Sec,
+    Hpointer, Mpointer,
+    Spointer} from './styles'
 
 
 const ClockAnalogPage:React.FC = () => {

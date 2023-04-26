@@ -7,14 +7,13 @@ const ClockDigitalPage:React.FC = () => {
         const numbFormat = numb < 10 ? `0${numb.toString()}`: numb.toString()
         return numbFormat
     }
+
     let day:Date = new Date()
     const hour:string = verifyNumber(day.getHours())
     const minute:string= verifyNumber(day.getMinutes())
     const second:string= verifyNumber(day.getSeconds())
     
     let now = [hour, minute, second]
-
-
 
     const [hourNow, setHour] = useState<Date>()
     useEffect(()=> {
@@ -26,7 +25,7 @@ const ClockDigitalPage:React.FC = () => {
     return (
         <ClockPage className="container-fluid">
             <ClockBox>
-                <ClockTitle>Relogio Digital</ClockTitle>
+                <ClockTitle>Relógio Digital</ClockTitle>
 
                 <Clock className="clock">
                     <ClockNumber>{now[0]}</ClockNumber>
