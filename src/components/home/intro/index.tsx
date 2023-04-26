@@ -1,15 +1,13 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import local_camilo_cv from '../../../utils/localDocs'
 
 
 import {BoxLeft, BoxRight, Buttons, MyButton, MyButtonHighLight, Title, HomeText, HomeTextPersonal, TypedText, CursorText, HomeImage, Intro} from './styles'
 
-const ContainerIntro:React.FC = () => {
-    const screenRef = useRef<HTMLDivElement>(null)
-
-    const typedTextSpan = document.querySelector('.typedText')
-    const cursorSpan = document.querySelector(".cursor")  
+const ContainerIntro:React.FC = () => {    
+    let typedTextSpan:Element|null
+    let cursorSpan:Element|null
 
     interface animation {
         textArray: string[]
@@ -27,14 +25,18 @@ const ContainerIntro:React.FC = () => {
         textArrayIndex: 0,
         charIndex: 0,
     }
-    const [animat, setAnimat] = useState(anima)
+
+
+    const [animat, setAnimat] = useState<(Element|null)[]>()
 
         useEffect(()=> {
-            if(screenRef.current?.offsetParent !== null){
-                type()
+            typedTextSpan = document.querySelector('.typedText')
+            cursorSpan = document.querySelector(".cursor")
+            if(cursorSpan && typedTextSpan){
+                setAnimat([cursorSpan, typedTextSpan])
             }
-        }, [])
- 
+            type()
+        }, []) 
     
     function type() {
         if(cursorSpan && typedTextSpan){
@@ -51,6 +53,7 @@ const ContainerIntro:React.FC = () => {
             }
         }
     }
+
     function erase(): void{
         if(cursorSpan && typedTextSpan){
 
@@ -69,7 +72,7 @@ const ContainerIntro:React.FC = () => {
     }
 
     return (
-        <Intro className="container-fluid" ref={screenRef}>
+        <Intro className="container-fluid">
             <BoxLeft>
                 <HomeImage src="/camilocosta.png" alt="Imagem ilustrativa de Camilo"/>
                 <Buttons>
