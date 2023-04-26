@@ -34,9 +34,9 @@ const ContainerIntro:React.FC = () => {
             cursorSpan = document.querySelector(".cursor")
             if(cursorSpan && typedTextSpan){
                 setAnimat([cursorSpan, typedTextSpan])
+                type()
             }
-            type()
-        }, []) 
+        }, [])
     
     function type() {
         if(cursorSpan && typedTextSpan){
