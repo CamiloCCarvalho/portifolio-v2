@@ -15,7 +15,7 @@ const Footer:React.FC = () => {
                 </div>
 
                 <div className="card-body">
-                    <h5 className="card-title">Camilo Costa de Carvalho</h5>
+                    <h3 className="card-title">Camilo Costa de Carvalho</h3>
                     <p className="card-text">FRONT-END | JAVASCRIPT</p>
                 </div>
 
