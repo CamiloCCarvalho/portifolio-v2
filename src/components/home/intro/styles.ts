@@ -24,7 +24,7 @@ export const Intro = styled.div`
     display:flex;
     flex-flow row wrap;
     align-items:center;
-    justify-content:space-around;
+    justify-content:space-between;
 
     @media(max-width: 968px) {
         flex-flow: column wrap;
@@ -36,7 +36,7 @@ export const BoxLeft = styled.figure`
     flex-flow:column nowrap;
     align-items:center;
     justify-content:center;
-    width:auto;
+    width:30%;
     height:auto;
     padding:25px;
 
@@ -49,7 +49,7 @@ export const BoxLeft = styled.figure`
 export const BoxRight = styled.section`
     display:flex;
     flex-flow:column wrap;
-    width:auto;
+    width:70%;
     height:auto;
     margin:0;
     max-width:750px;
@@ -60,7 +60,7 @@ export const BoxRight = styled.section`
 //Content Intro - left side
 export const HomeImage = styled.img`
     width:300px;
-    height:300px;
+    height:320px;
     filter: drop-shadow(-10px 6px 20px rgba(0, 0, 0, 0.520));
     border-radius:50%;
     
@@ -128,6 +128,8 @@ export const HomeText = styled.article`
     }
 `
 export const Title = styled.h2`
+    width:auto;
+    height:auto;
     font-family: 'Monserrat', sans-serif;
     font-weight:900;
 `
@@ -135,6 +137,8 @@ export const Title = styled.h2`
 export const HomeTextPersonal = styled.p`
     font-size: 2rem;
     padding: 0.5rem;
+    width:auto;
+    height:auto;
     &.textP {
         font-size: 3rem;
         padding: 0.5rem;
@@ -145,6 +149,8 @@ export const HomeTextPersonal = styled.p`
     }
 `
 export const TypedText = styled.span`
+    width:auto;
+    height:auto;
     font-weight: normal;
 
     &.typedText {
@@ -157,6 +163,7 @@ export const CursorText = styled.span`
     display: inline-block;
     margin-left: 0.1rem;
     width: 3px;
+    height:auto;
 
     &.cursor {
         display: inline-block;

@@ -16,7 +16,7 @@ const Header:React.FC<Props>= ({ toggleTheme }) => {
     return (
         
             <ContainerNav className="navbar navbar-expand-lg">
-                <Anch to="/">
+                <Anch to="/" aria-label="Return to home page">
                     <AiFillHome size="24"/>
                 </Anch>
 
@@ -34,18 +34,19 @@ const Header:React.FC<Props>= ({ toggleTheme }) => {
                             id="navbarSupportedContent">    
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item active">
-                                <Anch to="/about">
+                                <Anch to="/about" aria-label="Go to about page">
                                     Sobre
                                 </Anch>
                             </li>
                             
                             <li className="nav-item">
-                                <Anch to="/portifolio">
+                                <Anch to="/portifolio" aria-label="Go to portifolio page">
                                     Portifólio
                                 </Anch>
                             </li>
                         </ul>
                         <Switch className="switchBtn"
+                            aria-label="Button swap theme site between light and dark"
                             onChange={toggleTheme}
                             checked={title === 'dark'}
                             checkedIcon={false}
