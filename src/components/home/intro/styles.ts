@@ -19,6 +19,7 @@ const slideIntro = keyframes`
     }
 `
 export const Intro = styled.div`
+    width:auto;
     height:auto;
     display:flex;
     flex-flow row wrap;
@@ -58,8 +59,8 @@ export const BoxRight = styled.section`
 
 //Content Intro - left side
 export const HomeImage = styled.img`
-    width: 300px;
-    height:auto;
+    width:300px;
+    height:300px;
     filter: drop-shadow(-10px 6px 20px rgba(0, 0, 0, 0.520));
     border-radius:50%;
     
@@ -68,6 +69,7 @@ export const HomeImage = styled.img`
 export const Buttons = styled.figcaption`
     font-family: 'Monserrat', sans-serif;
     width:60%;
+    height:auto;
     display:flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -75,6 +77,7 @@ export const Buttons = styled.figcaption`
     padding:20px;
 `
 export const MyButton = styled.button`
+    height:auto;
     background: ${props => props.theme.colors.highlight};
     width:fit-content;
     padding: 2px 10px;
@@ -90,6 +93,7 @@ export const MyButton = styled.button`
     }
 `
 export const MyButtonHighLight = styled.button`
+    height:auto;
     background: ${props => props.theme.colors.text};
     width:fit-content;
     padding: 2px 10px;
@@ -110,6 +114,7 @@ export const MyButtonHighLight = styled.button`
 //Content Intro - Right side
 export const HomeText = styled.article`
     height: 100vh;
+    width:auto;
     display: flex;
     flex-flow:column nowrap;
     justify-content: center;
