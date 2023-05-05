@@ -59,8 +59,8 @@ export const BoxRight = styled.section`
 
 //Content Intro - left side
 export const HomeImage = styled.img`
-    width:464px;
-    height:500px;
+    width:278;
+    height:300;
     filter: drop-shadow(-10px 6px 20px rgba(0, 0, 0, 0.520));
     border-radius:50%;
     
