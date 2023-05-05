@@ -47,7 +47,7 @@ export const GridProjects = styled.ul`
     }
 `
 
-export const CardProject = styled.li`
+export const CardProject = styled.div`
     width:350px;
     height:250px;
     background: ${props => props.theme.colors.highlight};
