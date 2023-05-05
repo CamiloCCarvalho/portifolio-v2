@@ -4,5 +4,7 @@ Diferente da primeira versão com [React / JS / BootStrap] usando CRA, este foi 
 
 ## Sobre o Portifólio
 
-Este portifólio esta e será mantido em constante atualização, de acordo com as stacks e habilidades adquiridas, incrementando os projetos já feitos.
+Este portifólio esta e será mantido em constante atualização, de acordo com as stacks e habilidades adquiridas, incrementando os projetos já feitos. 
+
+
 
