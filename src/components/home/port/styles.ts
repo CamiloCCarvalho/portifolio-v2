@@ -67,4 +67,7 @@ export const NameProject = styled.p`
     text-align:center;
     
 `
+export const Card = styled.li`
+    list-style-type:none;
+`
     
