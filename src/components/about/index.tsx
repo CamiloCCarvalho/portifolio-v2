@@ -6,7 +6,7 @@ const AboutPage = () => {
         <ContainerAbout>
 
             <CardAbout className="card">
-                <Title3>Sobre Min</Title3>
+                <Title3>Sobre Mim</Title3>
 
                 <TextBox className="card-body">
                     <Text className="card-text">Desenvolvedor Front-end, tenho 29 anos, com experiência em React.js, JavaScript, Html, Css, Sass, TypeScript, Styled Components, BootStrap e consumo de APIs REST. Amante de tecnologia desde criança. Já com bagagem profissional de outras áreas, e bom desenvolvimento de SoftSkills. Formado em outra área porem cursando Especialização em FullStack.</Text>

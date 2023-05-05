@@ -123,7 +123,7 @@ const CalcPage:React.FC = () => {
     }
 
     return (
-        <ContainerPage className="container-fluid">
+        <ContainerPage className="container-fluid pt-5">
             <CalcBox id="main">
                 <Header>
                     <h1>Calc.js</h1>
