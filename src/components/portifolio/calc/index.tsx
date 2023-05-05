@@ -132,33 +132,33 @@ const CalcPage:React.FC = () => {
                 <Input type="text" inputMode='tel' id="input"/>
 
                 <Keyboard id="keys">
-                    <Keys id="clear">C</Keys>
-                    <Keys className="charKey" data-value=" ( ">(</Keys>
-                    <Keys className="charKey" data-value=" ) ">)</Keys>
-                    <Keys className="charKey" data-value=" / ">/</Keys>
-                    <Keys className="charKey" data-value="7">7</Keys>
-                    <Keys className="charKey" data-value="8">8</Keys>
-                    <Keys className="charKey" data-value="9">9</Keys>
-                    <Keys className="charKey" data-value=" * ">*</Keys>
-                    <Keys className="charKey" data-value="4">4</Keys>
-                    <Keys className="charKey" data-value="5">5</Keys>
-                    <Keys className="charKey" data-value="6">6</Keys>
-                    <Keys className="charKey" data-value=" - ">-</Keys>
-                    <Keys className="charKey" data-value="1">1</Keys>
-                    <Keys className="charKey" data-value="2">2</Keys>
-                    <Keys className="charKey" data-value="3">3</Keys>
-                    <Keys className="charKey" data-value=" + ">+</Keys>
-                    <Keys className="charKey" data-value="0">0</Keys>
-                    <Keys className="charKey" data-value=".">.</Keys>
-                    <Keys className="charKey" data-value=" % ">mod</Keys>
-                    <Keys id="equal">=</Keys>
+                    <Keys role="button" id="clear">C</Keys>
+                    <Keys role="button" className="charKey" data-value=" ( ">(</Keys>
+                    <Keys role="button" className="charKey" data-value=" ) ">)</Keys>
+                    <Keys role="button" className="charKey" data-value=" / ">/</Keys>
+                    <Keys role="button" className="charKey" data-value="7">7</Keys>
+                    <Keys role="button" className="charKey" data-value="8">8</Keys>
+                    <Keys role="button" className="charKey" data-value="9">9</Keys>
+                    <Keys role="button" className="charKey" data-value=" * ">*</Keys>
+                    <Keys role="button" className="charKey" data-value="4">4</Keys>
+                    <Keys role="button" className="charKey" data-value="5">5</Keys>
+                    <Keys role="button" className="charKey" data-value="6">6</Keys>
+                    <Keys role="button" className="charKey" data-value=" - ">-</Keys>
+                    <Keys role="button" className="charKey" data-value="1">1</Keys>
+                    <Keys role="button" className="charKey" data-value="2">2</Keys>
+                    <Keys role="button" className="charKey" data-value="3">3</Keys>
+                    <Keys role="button" className="charKey" data-value=" + ">+</Keys>
+                    <Keys role="button" className="charKey" data-value="0">0</Keys>
+                    <Keys role="button" className="charKey" data-value=".">.</Keys>
+                    <Keys role="button" className="charKey" data-value=" % ">mod</Keys>
+                    <Keys role="button" id="equal">=</Keys>
                 </Keyboard>
 
                 <Section>
-                    <Keys id="copyToClipboard" className="copy">
+                    <Keys role="button" id="copyToClipboard" className="copy">
                         <BsFillSaveFill size="18"/>
                     </Keys>
-                    <Input type="text" id="result" disabled/>
+                    <Input title="result" type="text" id="result" disabled/>
                 </Section>
 
             </CalcBox>

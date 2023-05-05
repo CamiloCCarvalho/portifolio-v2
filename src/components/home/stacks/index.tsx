@@ -30,7 +30,7 @@ const ContainerStacks:React.FC = () => {
                     {icons.map((icon, index)=>(
                         <CardStack key={"card" + index.toString()}>
                             <StyledIcon key={index.toString()}>{icon}</StyledIcon>
-                            <NameStacks key={index.toString() + "titleStack"}>{names[index]}</NameStacks>
+                            <NameStacks title="Stacks names" key={index.toString() + "titleStack"}>{names[index]}</NameStacks>
                         </CardStack>
                     ))}
             </GridStacks>

@@ -76,13 +76,13 @@ const ContainerIntro:React.FC = () => {
             <BoxLeft>
                 <HomeImage width='278' height='300' src="/camilocosta.webp" alt="Imagem ilustrativa de Camilo"/>
                 <Buttons>
-                    <Link to={local_camilo_cv} target="_blank">
-                        <MyButtonHighLight type="button" className="btn">
+                    <Link role="link" to={local_camilo_cv} target="_blank">
+                        <MyButtonHighLight role="button" type="button" className="btn">
                         Curriculo PDF
                         </MyButtonHighLight>
                     </Link>
-                    <Link to="/#projects">
-                        <MyButton type="button" className="btn">
+                    <Link role="link" to="/#projects">
+                        <MyButton role="button" type="button" className="btn">
                         Portifólio
                         </MyButton>
                     </Link>
