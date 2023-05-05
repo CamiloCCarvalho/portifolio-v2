@@ -74,7 +74,7 @@ const ContainerIntro:React.FC = () => {
     return (
         <Intro className="container-fluid pt-5">
             <BoxLeft>
-                <HomeImage width='278' height='300' src="/camilocosta.webp" alt="Imagem ilustrativa de Camilo"/>
+                <HomeImage width='417' height='450' src="/camilocosta.webp" alt="Imagem ilustrativa de Camilo"/>
                 <Buttons>
                     <Link role="link" to={local_camilo_cv} target="_blank">
                         <MyButtonHighLight role="button" type="button" className="btn">
