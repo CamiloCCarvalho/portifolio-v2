@@ -19,7 +19,7 @@ const slideIntro = keyframes`
     }
 `
 export const Intro = styled.div`
-    width:auto;
+    width:100vw;
     height:auto;
     display:flex;
     flex-flow row wrap;
@@ -78,7 +78,7 @@ export const Buttons = styled.figcaption`
 `
 export const MyButton = styled.button`
     height:auto;
-    background: ${props => props.theme.colors.highlight};
+    background: ${props => props.theme.colors.text};
     width:fit-content;
     padding: 2px 10px;
     border-bottom: 1px solid cyan;

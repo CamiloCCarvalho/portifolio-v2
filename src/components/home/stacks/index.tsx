@@ -17,10 +17,10 @@ import { SiTypescript,
 const ContainerStacks:React.FC = () => {
 
     //list icons
-    const icons:JSX.Element[] = [ <DiReact/>, <DiBootstrap/>, <DiGit/>, <DiGithub/>, <DiJavascript/>, <DiSass/>, <DiNpm/>, <DiNodejs/>, <SiTypescript size="30"/>, <SiStyledcomponents size="40"/>, <SiVercel size="30"/>, <SiVisualstudiocode size="30"/>, <SiVite size="30"/>, <SiPostgresql size="30"/>, <SiSequelize size="30"/>, <SiMongodb size="30"/> ]
+    const icons:JSX.Element[] = [ <DiReact/>, <DiBootstrap/>, <DiGit/>, <DiGithub/>, <DiJavascript/>, <DiSass/>, <DiNodejs/>, <SiTypescript size="30"/>, <SiStyledcomponents size="40"/>, <SiPostgresql size="30"/>, <SiSequelize size="30"/>, <SiMongodb size="30"/> ]
 
     //list titles for icons
-    const names:string[] = ["React", "BootStrap", "Git", "GitHub", "JavaScript", "Sass", "Npm", "NodeJS", "TypeScript", "Styled Components", "Vercel", "VS Code", "Vite", "PostgreSQL", "Sequelize", "MongoDB" ]
+    const names:string[] = ["React", "BootStrap", "Git", "GitHub", "JavaScript", "Sass", "NodeJS", "TypeScript", "Styled Components", "PostgreSQL", "Sequelize", "MongoDB" ]
 
     return (
         <Stacks className="container-fluid m-0 p-0">
