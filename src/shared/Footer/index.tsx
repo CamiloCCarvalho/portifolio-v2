@@ -16,11 +16,11 @@ const Footer:React.FC = () => {
 
                 <div className="card-body">
                     <h3 className="card-title">Camilo Costa de Carvalho</h3>
-                    <p className="card-text">FRONT-END | JAVASCRIPT</p>
+                    <p className="card-text">FRONT-END</p>
                 </div>
 
                 <div className="card-footer">
-                   Atualizado: 26/04/2023 ---  Versão: 2.1.16
+                   Atualizado: 03/07/2023 ---  Versão: 2.1.16
                 </div>
             </FooterBox>
     )

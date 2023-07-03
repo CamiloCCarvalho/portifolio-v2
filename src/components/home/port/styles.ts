@@ -1,4 +1,5 @@
 import styled, { keyframes }from 'styled-components'
+import {Link} from 'react-router-dom'
 
 const slideIntro = keyframes`
     from {
@@ -65,9 +66,18 @@ export const CardProject = styled.div`
 export const NameProject = styled.p`
     word-wrap: break-word;
     text-align:center;
+    text-decoration: none;
     
 `
 export const Card = styled.li`
     list-style-type:none;
+    text-decoration: none;
 `
-    
+
+export const LinkPage = styled(Link)`
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+`
