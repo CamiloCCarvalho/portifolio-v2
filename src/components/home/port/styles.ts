@@ -81,3 +81,11 @@ export const LinkPage = styled(Link)`
         text-decoration: none;
     }
 `
+
+export const LinkDownload = styled.a`
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+`

@@ -1,9 +1,10 @@
-import {Port, TitleProjects, GridProjects, CardProject, NameProject, Card, LinkPage} from './styles'
+import {Port, TitleProjects, GridProjects, CardProject, NameProject, Card, LinkPage, LinkDownload} from './styles'
 
 import {BsFillStopwatchFill} from 'react-icons/bs'
 import {IoMdWatch} from 'react-icons/io'
-import {FaHashtag} from 'react-icons/fa'
+import {FaHashtag, FaGamepad} from 'react-icons/fa'
 import {MdCalculate, MdOutlineWeb} from 'react-icons/md'
+
 
 const ContainerPort:React.FC = () => {
     return (
@@ -87,6 +88,18 @@ const ContainerPort:React.FC = () => {
                             </NameProject>
                         </CardProject>
                     </LinkPage>
+                </Card>
+
+                <Card>
+                    <LinkDownload role="link" className="linkRef" 
+                              href="/snake_game.exe" download="/snake_game.exe">
+                        <CardProject>
+                            <FaGamepad size="84"/>
+                            <NameProject aria-label="Aria Title" title="title">
+                                Jogo da Cobra - Download Executavel
+                            </NameProject>
+                        </CardProject>
+                    </LinkDownload>
                 </Card>
 
             </GridProjects>
