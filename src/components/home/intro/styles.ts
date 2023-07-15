@@ -18,13 +18,14 @@ const slideIntro = keyframes`
         opacity:100%;
     }
 `
-export const Intro = styled.div`
-    width:100vw;
+export const Intro = styled.section`
     height:auto;
     display:flex;
     flex-flow row wrap;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-around;
+    padding-left: 0;
+    padding-right: 0;
 
     @media(max-width: 968px) {
         flex-flow: column wrap;
