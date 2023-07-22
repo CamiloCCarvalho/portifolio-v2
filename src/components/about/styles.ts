@@ -22,7 +22,7 @@ export const ContainerAbout = styled.section`
 
 export const CardAbout = styled.article`
     max-width: 600px;
-    min-height: 500px;
+    min-height: 600px;
     background: ${props => props.theme.colors.highlight};
     margin-bottom: 20px;
     margin-right: 20px;
