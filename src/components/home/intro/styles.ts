@@ -135,6 +135,14 @@ export const Title = styled.h2`
     font-weight:900;
 `
 
+export const TitleWork = styled.h2`
+    width:auto;
+    height:auto;
+    font-family: 'Monserrat', sans-serif;
+    font-weight:900;
+    text-align: center;
+`
+
 export const HomeTextPersonal = styled.p`
     font-size: 2rem;
     padding: 0.5rem;

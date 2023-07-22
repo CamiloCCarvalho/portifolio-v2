@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import local_camilo_cv from '../../../utils/localDocs'
 
 
-import {BoxLeft, BoxRight, Buttons, MyButton, MyButtonHighLight, Title, HomeText, HomeTextPersonal, TypedText, CursorText, HomeImage, Intro} from './styles'
+import {BoxLeft, BoxRight, Buttons, MyButton, MyButtonHighLight, Title, HomeText, HomeTextPersonal, TypedText, CursorText, HomeImage, Intro, TitleWork} from './styles'
 
 const ContainerIntro:React.FC = () => {    
     let typedTextSpan:Element|null
@@ -91,7 +91,7 @@ const ContainerIntro:React.FC = () => {
             <BoxRight>
                 <HomeText className='animationTextBox'>
                     <Title>Olá! Eu sou Camilo</Title>
-                    <Title style={{color: "darkcyan", fontSize: "2rem"}}>{"<Front-End Developer />"}</Title>
+                    <TitleWork style={{color: "darkcyan", fontSize: "2rem"}}>{'<Front-End Developer/>'}</TitleWork>
                     <HomeTextPersonal className="textP">Programar 
                         <TypedText className="typedText"></TypedText><CursorText className="cursor">&nbsp;</CursorText>
                     </HomeTextPersonal>
