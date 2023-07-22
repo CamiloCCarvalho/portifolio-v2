@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { Link } from 'react-router-dom';
 
 const slideIntro = keyframes`
     from {
@@ -29,6 +30,19 @@ export const CardAbout = styled.article`
     border-left: 2px solid cyan;
     box-shadow: inset 0 -20px 5px rgba(0,500,500, 0.5);
     animation: ${slideIntro} 2.2s;
+
+    @media (min-width: 700px) {
+        width: 600px;
+    }
+`
+export const TextLink = styled(Link)`
+    text-decoration: none;
+    color: #FFC745;
+
+    &:hover {
+        color: red;
+        text-decoration: none;
+    }
 `
 
 export const Text = styled.p`
