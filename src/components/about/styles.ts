@@ -31,6 +31,9 @@ export const CardAbout = styled.article`
     box-shadow: inset 0 -20px 5px rgba(500, 500, 500, 0.2);
     animation: ${slideIntro} 2.2s;
 
+    &:hover {
+        border-left: 2px solid cyan;
+    }
     @media (min-width: 700px) {
         width: 600px;
     }
