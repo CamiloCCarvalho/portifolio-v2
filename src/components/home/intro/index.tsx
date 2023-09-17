@@ -74,11 +74,11 @@ const ContainerIntro:React.FC = () => {
     return (
         <Intro className="container-fluid pt-5">
             <BoxLeft>
-                <HomeImage width='278w' height='300h' src="/camilocosta.webp" alt="Imagem ilustrativa de Camilo"/>
+                <HomeImage src="/camilocostaperfil.png" alt="Imagem ilustrativa de Camilo"/>
                 <Buttons>
                     <Link role="link" to={local_camilo_cv} target="_blank">
                         <MyButtonHighLight role="button" type="button" className="btn">
-                        Curriculo PDF
+                        Curriculo - PDF
                         </MyButtonHighLight>
                     </Link>
                     <Link role="link" to="/#projects">
@@ -91,8 +91,8 @@ const ContainerIntro:React.FC = () => {
             <BoxRight>
                 <HomeText className='animationTextBox'>
                     <Title>Olá! Eu sou Camilo</Title>
-                    <TitleWork style={{color: "darkcyan", fontSize: "2rem"}}>{'<Front-End Developer/>'}</TitleWork>
-                    <HomeTextPersonal className="textP">Programar 
+                    <TitleWork style={{color: "#9400D3", fontSize: "1.8rem"}}>{'Developer: RPA | Front-end'}</TitleWork>
+                    <HomeTextPersonal className="textP" style={{color: "#9400D3"}}>Programar 
                         <TypedText className="typedText"></TypedText><CursorText className="cursor">&nbsp;</CursorText>
                     </HomeTextPersonal>
                 </HomeText>

@@ -35,6 +35,7 @@ export const TitleStacks = styled.h2`
     font-family: 'Monserrat', sans-serif;
     font-weight: 800;
     animation: ${slideIntro} 2.2s;
+    color: ${props => props.theme.colors.only_white};
     &[data-anime="left"] {
         transition: .7s;
         opacity: 0.3;
@@ -81,21 +82,26 @@ export const CardStack = styled.li`
     width:126px;
     height:126px;
     background: ${props => props.theme.colors.background};
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.white_violet};
     display:flex;
     flex-flow: column nowrap;
     align-items:center;
     justify-content:center;
     word-wrap: break-word;
     border-radius: 2px 20px 2px 2px;
-    border-bottom: 2px solid cyan;
+    border-bottom: 2px solid ${props => props.theme.colors.white_violet};
     cursor:pointer;
+
+    &:hover {
+        border-bottom: 2px solid cyan;
+        transition: 0.5s;
+    }
 
 `
 //Icons
 export const StyledIcon = styled.i`
     font-size: 48px;
-    filter:drop-shadow(0 0 3px rgba(0, 500, 900, 0.6));
+    filter:drop-shadow(0 0 2px rgba(140,0,210, 0.3));
     animation: ${iconScaleAnime} 3s ease-in-out infinite;
 `
 

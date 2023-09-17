@@ -60,10 +60,10 @@ export const BoxRight = styled.section`
 
 //Content Intro - left side
 export const HomeImage = styled.img`
-    width:417;
-    height:450;
-    filter: drop-shadow(-10px 6px 20px rgba(0, 0, 0, 0.520));
-    border-radius:50%;
+    width:270px;
+    height:270px;
+    filter: drop-shadow(-12px 6px 21px rgba(0, 0, 0, 0.520));
+    border-radius: 3px;
     
 `
 
@@ -82,33 +82,36 @@ export const MyButton = styled.button`
     background: ${props => props.theme.colors.text};
     width:fit-content;
     padding: 2px 10px;
-    border-bottom: 1px solid cyan;
-    border-radius: 0 10px 0 0;
+    border-bottom: 1px solid ${props => props.theme.colors.only_violet};
+    border-radius: 3px;
     color: ${props => props.theme.colors.background};
 
     &:hover {
         background: ${props => props.theme.colors.text};
         color: ${props => props.theme.colors.background};
-        box-shadow: 0 0 14px rgba(0, 300, 300, 0.7);
+        border-bottom: 1px solid cyan;
+        border-radius: 3px 10px 3px 3px;
         transition: 0.8s;
     }
 `
 export const MyButtonHighLight = styled.button`
     height:auto;
-    background: ${props => props.theme.colors.text};
+    background: ${props => props.theme.colors.only_violet};
     width:fit-content;
     padding: 2px 10px;
     margin-right: 20px;
-    border-bottom: 1px solid cyan;
-    border-radius: 0 10px 0 0;
-    color: ${props => props.theme.colors.textNav};
+    border-bottom: 1px solid ${props => props.theme.colors.only_white};
+    border-radius: 3px;
+    color: ${props => props.theme.colors.only_white};
     font-style: bold;
 
     &:hover {
-        background: ${props => props.theme.colors.primary};
-        color: ${props => props.theme.colors.textNav};
-        box-shadow: 0 0 14px rgba(0, 300, 300, 0.7);
+        background: ${props => props.theme.colors.only_violet};
+        color: ${props => props.theme.colors.only_white};
+        border-bottom: 1px solid cyan;
+        border-radius: 3px 10px 3px 3px;
         transition: 0.8s;
+
     }
 `
 
@@ -164,7 +167,7 @@ export const TypedText = styled.span`
 
     &.typedText {
         font-weight: bold;
-        color: #0FA3B1;
+        color: ${props => props.theme.colors.text};
     }
     word-wrap: break-wrod;
 `
@@ -176,7 +179,7 @@ export const CursorText = styled.span`
 
     &.cursor {
         display: inline-block;
-        background-color: #ccc;
+        background-color: darkcyan;
         margin-left: 0.1rem;
         width: 3px;
         animation: ${blink} 1s infinite;

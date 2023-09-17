@@ -52,14 +52,19 @@ export const CardProject = styled.div`
     width:350px;
     height:250px;
     background: ${props => props.theme.colors.highlight};
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.only_white};
     display:flex;
     flex-flow: column nowrap;
     align-items:center;
     justify-content:space-around;
     word-wrap: break-word;
     border-radius: 20px 2px 2px 2px;
-    border-bottom: 2px solid cyan;
+    border-bottom: 2px solid ${props => props.theme.colors.only_white};
+
+    &:hover {
+        border-bottom: 2px solid cyan;
+        transiton: 0.5s;
+    }
 
 `
 

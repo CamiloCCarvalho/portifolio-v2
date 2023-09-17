@@ -24,7 +24,7 @@ const ContainerStacks:React.FC = () => {
 
     return (
         <Stacks className="container-fluid m-0 p-0">
-            <TitleStacks>Stacks & Ferramentas</TitleStacks>
+            <TitleStacks>Tecnologias & Ferramentas</TitleStacks>
 
             <GridStacks>
                     {icons.map((icon, index)=>(

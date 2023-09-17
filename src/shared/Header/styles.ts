@@ -13,7 +13,7 @@ export const ContainerNav = styled.header`
     padding: 0 20px;
     justify-content: space-between;
     border-bottom: 1px solid ${props => props.theme.colors.secundary};
-    box-shadow:0 -8px 60px rgba(0,500,500, 0.3);
+    box-shadow:0 8px 60px rgba(140,0,210, 0.3);
 `
 export const DropDownMenu = styled.div`
     background: ${props => props.theme.colors.primary};
@@ -43,8 +43,8 @@ export const Anch = styled(Link)`
 
     &:hover {
         text-decoration:none;
-        color: ${props => props.theme.colors.textNav};
-        color: ${props => props.theme.colors.text};
+        color: cyan;
+        color: cyan;
         transition: 0.3s;
     }    
 `

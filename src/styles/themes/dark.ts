@@ -3,12 +3,15 @@ export default {
 
     colors: {
         primary: '#191919', //navbackground dark
-        secundary: '#0FA3B1', //blue
+        secundary: '#9400D3', //darkviolet
 
         background: '#202020;', //darksilver
-        textNav: '#0FA3B1', //blue
+        textNav: '#9400D3', //darkviolet
         text:'#f5f5f5', //white
-        highlight: '#0FA3B1', //blue
+        highlight: '#9400D3', //darkviolet
+        white_violet: '#f5f5f5', // white
+        only_white: '#f5f5f5',
+        only_violet: '#9400D3',
     },
 }
     

@@ -8,7 +8,7 @@ export const FooterBox = styled.footer`
     border:none;
     border-radius:0;
     border-top: 1px solid ${props => props.theme.colors.highlight};
-    box-shadow:0 8px 60px rgba(0,500,500, 0.3);
+    box-shadow:0 8px 60px rgba(140,0,210, 0.3);
 
 `
     

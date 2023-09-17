@@ -12,6 +12,9 @@ declare module 'styled-components'{
             text: string,
             textNav: string,
             highlight: string,
+            white_violet: string,
+            only_white: string,
+            only_violet: string,
         }
     }
     

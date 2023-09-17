@@ -23,12 +23,12 @@ export const ContainerAbout = styled.section`
 export const CardAbout = styled.article`
     max-width: 600px;
     min-height: 600px;
-    background: ${props => props.theme.colors.highlight};
+    background: ${props => props.theme.colors.only_violet};
     margin-bottom: 20px;
     margin-right: 20px;
     border-radius: 2px 20px 20px 2px;
-    border-left: 2px solid cyan;
-    box-shadow: inset 0 -20px 5px rgba(0,500,500, 0.5);
+    border-left: 2px solid ${props => props.theme.colors.only_white};
+    box-shadow: inset 0 -20px 5px rgba(500, 500, 500, 0.2);
     animation: ${slideIntro} 2.2s;
 
     @media (min-width: 700px) {
