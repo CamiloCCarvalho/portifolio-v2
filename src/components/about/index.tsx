@@ -46,13 +46,13 @@ const AboutPage = () => {
                 <TextBox className="card-body">
                     <ul>
                         <li>
-                            <Text className="card-text">Transporte Público - Motorista (Categoria D) (2016 - 2021)</Text>
+                            <Text className="card-text">MOTORISTA (D) - Transporte Passageiros (2016 - 2021)</Text>
                         </li>
                         <li>
                             <Text className="card-text">ATENTO - Analista de Call Center Receptivo (2022 - 2023)</Text>
                         </li>
                         <li>
-                            <Text className="card-text">TRIA SOFTWARE - Estagiário desenvolvedor RPA - Python (05/23 - 08/23)</Text>
+                            <Text className="card-text">TRIA SOFTWARE - Estagio desenvolvedor RPA (05/23 - 08/23)</Text>
                         </li>
                         <li>
                             <Text className="card-text">TRIA SOFTWARE - Desenvolvedor RPA - Python | BotCity (09/23 - atuando)</Text>
@@ -67,32 +67,38 @@ const AboutPage = () => {
 
                     <ul>
                         <li>
-                            <Text className="card-text">UDEMY - [60h] LÓGICA DE PROGRAMAÇÃO: Curso básico de lógica de programação: C, C++, C#, Java e Python. (2023 - Via Tria Software).
+                            <Text className="card-text">UDEMY - [30h] LÓGICA DE PROGRAMAÇÃO: Algoritmos e lógica: C, C++, C#, Java e Python. (2023).
                             <TextLink target="_blank" role="link" to="https://github.com/CamiloCCarvalho?tab=repositories"> {repos}&#x2191;
                             </TextLink>
                             </Text>
                         </li>
                         <li>
-                            <Text className="card-text">UDEMY - [90h] PYTHON ESSENCIAL: Curso de Python completo: Incluindo exercicios, compreenshions, lambda, manipulação de arquivos e navegação em sistema. (2023 - Via Tria Software).
+                            <Text className="card-text">UDEMY - [65h] PYTHON ESSENCIAL: Curso completo de Python incluindo exercicios, manipulação de arquivos e sistema. (2023).
                             <TextLink target="_blank" role="link" to="https://github.com/CamiloCCarvalho?tab=repositories"> {repos}&#x2191;
                             </TextLink>
                             </Text>
                         </li>
                         <li>
-                            <Text className="card-text">UDEMY - [90h] BOTCITY RPA COM PYTHON: Curso de BotCity voltado para desenvolvimento de RPA com uso de Python para pessoas que ja atuam com ferramentas/ linguagens. (2023 - Via Tria Software).
+                            <Text className="card-text">UDEMY - [5h] BOTCITY RPA COM PYTHON: Curso de BotCity para Devs que ja atuam com outras ferramentas/ linguagens. (2023).
                             <TextLink target="_blank" role="link" to="https://github.com/CamiloCCarvalho?tab=repositories"> {repos}&#x2191;
                             </TextLink>
                             </Text>
                         </li>
-
                         <li>
-                            <Text className="card-text">ONEBITCODE - [100h] FULLSTACK JAVASCRIPT: Especialização em Front-End e Back-End usando as principais ferramentas do mercado, React, BootStrap, JS, TS, MongoDB, PostgreSQL entre outras. (2023 - Em curso).
+                            <Text className="card-text">UDEMY - [5h] PYTHON DRIVEN AI WITH BOTCITY: BotCity integrado a IAs via API. (2023).
                             <TextLink target="_blank" role="link" to="https://github.com/CamiloCCarvalho?tab=repositories"> {repos}&#x2191;.
                             </TextLink>
                             </Text>
                         </li>
                         <li>
-                            <Text className="card-text">TIVIT - [20h] GERA: Curso interno da empresa focado no desenvolvimento de soft skills, comunicação, trabalho em equipe, apresentação de cases. (2014).</Text>
+                            <Text className="card-text">UDEMY - [12h] CHATGPT COMPLETO + GUIA PROMPTS: Curso de prompts para chatGPT de forma acertiva e personalizada. (2023).
+                            </Text>
+                        </li>
+                        <li>
+                            <Text className="card-text">ONEBITCODE - [100h] FULLSTACK JAVASCRIPT: Especialização em Front-End, Back-End + Banco de Dados. (2023 - Em curso).
+                            <TextLink target="_blank" role="link" to="https://github.com/CamiloCCarvalho?tab=repositories"> {repos}&#x2191;.
+                            </TextLink>
+                            </Text>
                         </li>
                     </ul>
                 </TextBox>

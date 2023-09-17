@@ -16,7 +16,7 @@ const Footer:React.FC = () => {
 
                 <div className="card-body">
                     <h3 className="card-title">Camilo Costa de Carvalho</h3>
-                    <p className="card-text">Desenvolvedor</p>
+                    <p className="card-text">Desenvolvendo e Automatizando o mundo.</p>
                     <p className="card-text">RPA: (Python BotCity) & Front-End: (React JS TS)</p>
                 </div>
 
