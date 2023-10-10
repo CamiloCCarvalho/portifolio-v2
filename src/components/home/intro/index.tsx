@@ -81,7 +81,7 @@ const ContainerIntro:React.FC = () => {
                         Curriculo - PDF
                         </MyButtonHighLight>
                     </Link>
-                    <Link role="link" to="/#projects">
+                    <Link role="link" to="/portifolio">
                         <MyButton role="button" type="button" className="btn">
                         Portifólio
                         </MyButton>
